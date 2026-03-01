@@ -1,6 +1,7 @@
 package model;
-
-public class Apple extends Food implements Discountable{
+import model.constants.Colour;
+import model.constants.Discount;
+public class Apple extends Food{
     private String color;
     public Apple(int amount, double price, String color){
         super(amount, price, true);
@@ -8,11 +9,12 @@ public class Apple extends Food implements Discountable{
     }
     @Override
     public double getDiscount(){
-        if(color == "red"){
-            return 60.0;
-        }
-        else {
+        if (color.equals(Colour.RED)) {
+            return Discount.RED_APPLE_DISCOUNT;
+        } else {
             return 0.0;
         }
     }
+
 }
+

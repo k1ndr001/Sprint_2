@@ -15,8 +15,8 @@ public class Main {
 
         ShoppingCart cart = new ShoppingCart(products);
 
-        System.out.println("Общая сумма товаров без скидки: " + cart.getTotalPriceWithoutDiscount() + " руб.");
-        System.out.println("Общая сумма товаров со скидкой: " + cart.getTotalPriceWithDiscount() + " руб.");
-        System.out.println("Сумма всех вегетарианских продуктов без скидки: " + cart.getVegetarianTotalWithoutDiscount() + " руб.");
+        System.out.printf("Общая сумма товаров без скидки: " + cart.getTotalPriceWithoutDiscount() + " руб.%n");
+        System.out.printf("Общая сумма товаров со скидкой: " + cart.getTotalPriceWithDiscount() + " руб.%n");
+        System.out.printf("Сумма всех вегетарианских продуктов без скидки: " + cart.getVegetarianTotalWithoutDiscount() + " руб.%n");
     }
 }
